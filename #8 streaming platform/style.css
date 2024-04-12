@@ -221,7 +221,117 @@ body{
   color: #fff;
 }
 
+.main .video-items{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 20px;
+}
+
+.main .video-items .item{
+  position: relative;
+  width: 31%;
+}
+
+.main .video-items .item .like{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 8px 8px 5px;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.main .video-items .item .like:hover{
+  color: #f86161;
+}
+
+.main .video-items .item video{
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.main .video-items .item video:hover{
+  box-shadow: none;
+}
+
+.main .video-items .item .details{
+  margin-top: 10px;
+}
+
+.main .video-items .item .details .info{
+  display: flex;
+  margin-top: 8px;
+  gap: 20px;
+}
+
+.main .video-items .item .details .info .location,
+.main .video-items .item .details .info .rate{
+  display: flex;
+  align-items: center;
+}
+
+.main .video-items .item .details .info .location i,
+.main .video-items .item .details .info .rate i{
+  font-size: 18px;
+  color: #555;
+}
+
+.main .video-items .item .details .info .rate i{
+  color: #f3d076;
+}
+
 /* right section */
 .right-section{
   flex: 2;
+}
+
+.right-section .profile{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.right-section .profile .info{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.right-section .profile .info > i{
+  font-size: 20px;
+}
+
+.right-section .profile .info h5{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.right-section .profile .user{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.right-section .profile .user i{
+  font-size: 22px;
+  border: 1px solid #e5e5e5;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.right-section .profile .user img{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
 }
